@@ -5,98 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <style>
+        /* Importing a clean, modern font */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 20px;
             line-height: 1.6;
             color: #333;
-
+            background-color: #f9f9f9;
         }
-        h1, h2 {
+        h1, h2, h3 {
             color: #990000;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        h2 {
+            font-size: 28px;
+            border-bottom: 2px solid #000080;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 20px;
+            font-weight: 700;
         }
         p {
-            color: #333;
+            color: #555;
+        }
+        a {
+            color: #990000;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         .resume-section {
             margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
         }
         .job-title {
             font-weight: bold;
             color: #333;
+            font-size: 18px;
         }
         .job-date {
             font-style: italic;
             color: #666;
         }
-        .skills-list {
-            list-style-type: none;
+        .skills-list-inline {
             padding-left: 0;
-        }
-        .skills-list li {
-            background-color: #f4f4f4;
-            padding: 5px;
-            margin-bottom: 5px;
-            border-radius: 3px;
+            margin-bottom: 10px;
             color: #333;
+        }
+        .skills-list-inline li {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 5px 10px;
+            background-color: #f0f0f0;
+            border-radius: 20px;
+            color: #333;
+            font-size: 14px;
         }
         hr {
             border: 0 none;
             height: 10px;
             color: #000080;
             background-color: #000080;
-
         }
-    </style>
-</head>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-            color: #333;
-
+        /* Add subtle hover effects */
+        .skills-list-inline li:hover {
+            background-color: #990000;
+            color: #fff;
         }
-        h1, h2 {
-            color: #990000;
-        }
-        p {
-            color: #333;
-        }
-        .resume-section {
-            margin-bottom: 30px;
-        }
-        .job-title {
-            font-weight: bold;
-            color: #333;
-        }
-        .job-date {
-            font-style: italic;
-            color: #666;
-        }
-        .skills-list {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .skills-list li {
-            background-color: #f4f4f4;
-            padding: 5px;
-            margin-bottom: 5px;
-            border-radius: 3px;
-            color: #333;
-        }
-        hr {
-            border: 0 none;
-            height: 10px;
-            color: #000080;
-            background-color: #000080;
-
+        /* Add spacing and styles for better readability */
+        .contact-info p {
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -110,7 +102,7 @@
     <section class="resume-section" id="contact-info">
         <h2>Contact Information</h2>
         <p>Email: <a href="mailto:brayden@toulousemail.com">brayden@toulousemail.com</a></p>
-        <p>Phone: (682) 888-7858</p>
+        <p>Phone: <a href="tel:+16828887858">(682) 888-7858</a></p>
         <p>Location: Brazos County, TX</p>
     </section>
 
@@ -178,7 +170,7 @@
         <h2>Skills</h2>
 
         <h3>Computer Knowledge</h3>
-        <ul class="skills-list">
+        <ul class="skills-list-inline">
             <li>Google Productivity Suite</li>
             <li>Microsoft Office Suite</li>
             <li>Teams</li>
@@ -194,7 +186,7 @@
         </ul>
 
         <h3>Industry Knowledge</h3>
-        <ul class="skills-list">
+        <ul class="skills-list-inline">
             <li>Guest services</li>
             <li>Inventory management</li>
             <li>POS knowledge</li>
@@ -208,8 +200,3 @@
             <li>Guest recovery</li>
             <li>Banquets and catering</li>
             <li>In-room dining</li>
-        </ul>
-    </section>
-
-</body>
-</html>
