@@ -1,50 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Bare - Start Bootstrap Template</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Page content-->
-        <div class="container">
-            <div class="text-center mt-5">
-                <h1>A Bootstrap 5 Starter Template</h1>
-                <p class="lead">A complete project boilerplate built with Bootstrap</p>
-                <p>Bootstrap v5.2.3</p>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #990000;
+        }
+        .resume-section {
+            margin-bottom: 30px;
+            color: #990000;
+        }
+        .job-title {
+            font-weight: bold;
+        }
+        .job-date {
+            font-style: italic;
+            color: #666;
+        }
+        .skills-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .skills-list li {
+            background-color: #f4f4f4;
+            padding: 5px;
+            margin-bottom: 5px;
+            border-radius: 3px;
+        }
+        hr {
+            color: #000080;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Brayden Toulouse</h1>
+
+    <hr>
+
+    <!-- Contact Information Section -->
+    <section class="resume-section" id="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:brayden@toulousemail.com">brayden@toulousemail.com</a></p>
+        <p>Phone: (682) 888-7858</p>
+        <p>Location: Brazos County, TX</p>
+    </section>
+
+    <!-- Education Section -->
+    <section class="resume-section" id="education">
+        <h2>Education</h2>
+        <p><strong>Texas A&M University</strong></p>
+        <p>Bachelor's in Hospitality Management, Expected Graduation: 2026</p>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="resume-section" id="work-experience">
+        <h2>Work Experience</h2>
+        <div>
+            <p class="job-title">Bartender/Manager - Tipsy Turtle / Paddock Lane</p>
+            <p class="job-date">March 2021 - May 2022, March 2024 - Present</p>
+            <p>Responsibilities:</p>
+            <ul>
+                <li>Leads team of 10 in small extremely high volume bar to an output of up to 2500 drinks per night</li>
+                <li>Consults with owner and upper management on improvements and how best to implement them</li>
+                <li>Developed and instituted a comprehensive SOP framework that improved operational efficiency, employee morale, and reduced staff turnover.</li>
+            </ul>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="resume-section" id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Mixology</li>
+            <li>Customer Service</li>
+            <li>Time Management</li>
+            <li>Team Leadership</li>
+            <li>HTML/CSS</li>
+        </ul>
+    </section>
+
+</body>
 </html>
